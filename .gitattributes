@@ -1,0 +1,8 @@
+# Automatically detect text files and check them out with Windows-style line endings (CRLF).
+* text=auto eol=crlf
+
+# Binary files
+*.af binary
+*.ico binary
+*.png binary
+*.xcf binary

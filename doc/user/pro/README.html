@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClipFlow Pro</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --text: #172033;
+      --muted: #5f6b7a;
+      --accent: #b31d1d;
+      --accent-soft: #f8f9fa;
+      --border: #d9e1ec;
+      --code-bg: #f8f9fa;
+      --shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .hero,
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    section {
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .hotkeys {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .hotkey {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--accent-soft);
+    }
+
+    .hotkey strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    kbd {
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 0 2px;
+      border: 1px solid var(--border);
+      border-bottom-width: 3px;
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    ol,
+    ul {
+      margin: 0;
+      padding-left: 1.4rem;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    pre {
+      margin: 14px 0 0;
+      padding: 16px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--code-bg);
+      color: var(--text);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.45;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: var(--accent-soft);
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 12px 0 28px;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+      }
+
+      .hero,
+      section {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>ClipFlow Pro</h1>
+      <p class="subtitle">
+        A lightweight clipboard text manager for Windows.
+      </p>
+
+      <div class="hotkeys">
+        <div class="hotkey">
+          <strong>Save clipboard text</strong>
+          <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
+        </div>
+
+        <div class="hotkey">
+          <strong>Load text into the clipboard</strong>
+          <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Getting started</h2>
+      <p>
+        Start <strong>clipflow.exe</strong>.
+      </p>
+      <p>
+        ClipFlow runs quietly in the background. Use the keyboard shortcuts above whenever you want to save or load text
+        .
+      </p>
+    </section>
+
+    <section>
+      <h2>Save clipboard text</h2>
+      <ol>
+        <li>Copy the text you want to save.</li>
+        <li>
+          Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>.
+        </li>
+        <li>Choose a file name and location.</li>
+        <li>Confirm the save operation.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Load text</h2>
+      <ol>
+        <li>
+          Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>.
+        </li>
+        <li>Select a text file.</li>
+        <li>Confirm the file selection.</li>
+        <li>If the file contains template fields, enter the requested values.</li>
+        <li>The completed text is placed on the clipboard.</li>
+        <li>Paste it into another application with <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Using templates</h2>
+      <p>
+        A template can contain fields that ClipFlow asks you to fill in when the file is loaded.
+      </p>
+
+      <p>
+        <strong>Single-line field</strong>
+      </p>
+      <pre>$$Name$$</pre>
+
+      <p style="margin-top: 20px;">
+        <strong>Multiline field</strong>
+      </p>
+      <pre>$$#Message$$</pre>
+
+      <p style="margin-top: 20px;">
+        <strong>Example</strong>
+      </p>
+      <pre>Dear $$Name$$,
+
+$$#Message$$
+
+Kind regards,
+Stefan</pre>
+
+      <p style="margin-top: 20px;">
+        ClipFlow asks for the values of <strong>Name</strong> and <strong>Message</strong>, replaces the fields, and
+        places the completed text on the clipboard.
+      </p>
+    </section>
+
+    <section>
+      <h2>Repeated fields</h2>
+      <p>
+        The same field may appear more than once:
+      </p>
+
+      <pre>Customer: $$Name$$
+Contact:  $$Name$$</pre>
+
+      <p style="margin-top: 20px;">
+        ClipFlow asks for the value once and inserts it everywhere the same field appears.
+      </p>
+
+      <div class="note">
+        Use the same spelling and capitalization each time.
+      </div>
+    </section>
+
+    <section>
+      <h2>Literal double dollar signs</h2>
+      <p>
+        To insert double dollar signs without creating a template field, place a backslash before them:
+      </p>
+
+      <pre>\$$</pre>
+
+      <p style="margin-top: 20px;">
+        The resulting text will contain:
+      </p>
+
+      <pre>$$</pre>
+    </section>
+
+    <section>
+      <h2>Cancelling</h2>
+      <p>
+        You can cancel a file selection or template entry at any time. When an operation is cancelled, the clipboard
+        remains unchanged.
+      </p>
+    </section>
+
+    <section>
+      <h2>Troubleshooting</h2>
+
+      <p>
+        <strong>Windows blocks the application</strong>
+      </p>
+      <p>
+        ClipFlow is not digitally signed. Windows marks the downloaded ZIP archive and may warn about the program or
+        refuse to start it.
+      </p>
+      <p>
+        Unblock the archive before extracting it: right-click the ZIP file, select <strong>Properties</strong>, tick
+        <strong>Unblock</strong> at the bottom of the <strong>General</strong> tab, and confirm with <strong>OK</strong>
+        . Otherwise every extracted file keeps the mark.
+      </p>
+      <p>
+        If the message <strong>Windows protected your PC</strong> still appears, select <strong>More info</strong> and
+        then <strong>Run anyway</strong>.
+      </p>
+
+      <p style="margin-top: 20px;">
+        <strong>A hotkey does not work</strong>
+      </p>
+      <p>
+        Another application may already be using the same keyboard shortcut. Close that application or change its
+        shortcut, then restart ClipFlow.
+      </p>
+
+      <p style="margin-top: 20px;">
+        <strong>A template field is not replaced</strong>
+      </p>
+      <p>
+        Check that the field begins and ends with two dollar signs.
+      </p>
+
+      <pre>$$Name$$</pre>
+
+      <p style="margin-top: 20px;">
+        For a multiline field, add a number sign after the opening dollar signs.
+      </p>
+
+      <pre>$$#Message$$</pre>
+    </section>
+
+    <section>
+      <h2>License</h2>
+      <p>
+        ClipFlow is licensed under the GNU GPL version 3. See <strong>LICENSE</strong> in the package for the complete
+        terms. The corresponding source code is available at <a href="https://github.com/hofmann-development/clipflow">
+        GitHub</a>.
+      </p>
+    </section>
+
+    <footer>
+      ClipFlow Pro README
+    </footer>
+  </main>
+</body>
+</html>

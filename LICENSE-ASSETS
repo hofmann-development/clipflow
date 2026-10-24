@@ -1,0 +1,25 @@
+Asset and Branding License Notice
+
+The GNU General Public License (v3) in LICENSE applies solely to the source code of ClipFlow. 
+It does NOT apply to branding, logos, design assets, or promotional materials.
+
+1. Personal Use:
+   You may compile and use the software with these assets for your own personal, 
+   private use.
+
+2. Official Binaries & Redistribution:
+   You are permitted to redistribute unmodified official binary releases of ClipFlow 
+   provided by the copyright holder.
+
+3. Custom Distribution, Modifications, and Forks:
+   You MAY NOT distribute or publish custom-compiled builds, modified versions, 
+   or derived software containing these assets or the "ClipFlow" branding 
+   without explicit written permission. Distributed custom builds must use distinct branding.
+
+Excluded assets include:
+- marketing/
+- clipflow.af
+- clipflow.ico
+- clipflow.xcf
+
+Copyright (C) Stefan Hofmann, 2026

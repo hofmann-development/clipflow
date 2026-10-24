@@ -1,0 +1,1 @@
+ClipFlow is a fast and minimalistic clipboard text manager for Windows 11 or later. Save reusable snippets, load them with a global hotkey, and expand template fields with a few keystrokes. The source is available under GPLv3; prebuilt versions are offered as convenient packaged downloads.

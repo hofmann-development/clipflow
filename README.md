@@ -97,7 +97,7 @@ The application source code, build scripts, and project documentation outside `m
 
 Branding, design assets, and promotional materials are excluded from the GPL and remain subject to `LICENSE-ASSETS`.
 
-Excluded assets include at least:
+Excluded assets include:
 
 - `marketing/`
 - `clipflow.af`
